@@ -10,45 +10,66 @@
   <body class="h-full">
     <div class="min-h-full">
       <!-- navbar start here -->
-      <nav class="bg-teal-600">
-        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 items-center justify-between">
-            <div>
-              <h1 class="font-bold text-white text-2xl">kelv's</h1>
-            </div>
-            <div class="flex items-center">
-              <div class="md:block">
-                <div
-                  id="navbar_style_1"
-                  class="ml-10 flex items-baseline space-x-4"
+      <nav class="bg-teal-600" id="pageId">
+        <div
+          class="flex flex-wrap items-center justify-between mx-auto p-4 max-w-4xl"
+        >
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Kel'v</span
+          >
+          <button
+            data-collapse-toggle="navbar-solid-bg"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 hover:bg-teal-700 rounded-lg md:hidden focus:outline-none focus:ring-1 focus:ring-teal-200"
+            aria-controls="navbar-solid-bg"
+            aria-expanded="false"
+            onclick="navActive()"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="w-full md:block md:w-auto hidden" id="showNavbar">
+            <ul
+              class="flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-teal-600"
+            >
+              <li class="nav-link">
+                <a
+                  id="navButton"
+                  href="index.html"
+                  class="block text-gray-100 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Profile</a
                 >
-                  <a
-                    id="navbar_anchor_1"
-                    href="index.html"
-                    class="text-gray-100 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    aria-current
-                  >
-                    Profile
-                  </a>
-                  <a
-                    id="navbar_anchor_1"
-                    href="side_project.html"
-                    class="text-gray-100 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    aria-current
-                  >
-                    Projects
-                  </a>
-                  <a
-                    id="navbar_anchor_1"
-                    href="contact.html"
-                    class="text-gray-100 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    aria-current
-                  >
-                    Contact
-                  </a>
-                </div>
-              </div>
-            </div>
+              </li>
+              <li class="nav-link">
+                <a
+                  href="side_project.html"
+                  class="block text-gray-100 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Project</a
+                >
+              </li>
+              <li class="nav-link">
+                <a
+                  href="contact.html"
+                  class="block text-gray-100 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >Contact</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
