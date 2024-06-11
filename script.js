@@ -7,14 +7,3 @@ function navActive() {
     navId.className = "w-full md:block md:w-auto";
   }
 }
-
-function pageActive() {
-  $(document).ready(function () {
-    $(".nav-link").click(function () {
-      $(this)
-        .addClass("bg-teal-700 rounded-md rounded-lg")
-        .sibling()
-        .removeClass("bg-teal-700 rounded-md rounded-lg");
-    });
-  });
-}
